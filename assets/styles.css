@@ -13,7 +13,7 @@ header {
     background-color: #21044c;
 }
 
-h1 {
+h1{
     background-color: #5FBFC9;
     color: #f9f9f9;
     text-align: center;
@@ -121,8 +121,16 @@ footer {
     background-color: var(--primaryColor);
 }
 
-/* Estilos específicos para la sección de inicio */
+main{
+    display: flex;
+    justify-content: center;
+}
 
+main img{
+    width: 600px;
+}
+
+/* Estilos específicos para la sección de inicio */
 
 .inicio-container {
     padding: 5px 10%;
@@ -170,22 +178,39 @@ footer {
     opacity: 0.8;
 }
 
-/* Estilos específicos para la sección de productos */
+/* Estilos para la sección de productos */
+
+#productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0;
+    background-color: rgba(95, 191, 201, 0.1);
+}
+
+.zapatos-container {
+    width: 1080px;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 4rem 2rem;
+    padding: 4rem 0;
+}
 
 .zapato {
-    width: calc(33.33% - 20px);
-    /* Para que haya 3 zapatos por fila */
-    margin-bottom: 20px;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     background-color: #f9f9f9;
+    justify-content: space-between;
+    padding: 1rem;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
 }
 
 .zapato img {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
+    height: 400px;
 }
 
 .zapato h3 {
@@ -194,36 +219,69 @@ footer {
 }
 
 .zapato .descripcion {
-    font-size: 14px;
+    font-size: 0.9rem;
     color: #666;
 }
 
 .zapato .precio {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     color: #333;
 }
 
+
 /* Estilos para la sección de Nosotros */
 
 #nosotros {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0;
+    background-color: rgba(252, 206, 32, 0.1)
 }
 
-.historia h3 {
-    margin-top: 20px;
+.nosotros-container{
+    width: 1080px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
 }
+
+.historia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 2rem 0 4rem 0;
+}
+
+.historia p {
+    margin-top: 1.5rem;
+    line-height: 2;
+    text-wrap: balance;
+}
+
 
 .comentarios {
-    margin-top: 20px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
 /* Estilos para las tarjetas de comentarios */
 
 .tarjeta-comentario {
     display: flex;
-    margin-bottom: 20px;
-    padding: 10px;
+    width: 400px;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
     background-color: #f9f9f9;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -233,11 +291,18 @@ footer {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 1rem;
 }
 
 .tarjeta-comentario .contenido {
     flex: 1;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .tarjeta-comentario h4 {
@@ -249,13 +314,21 @@ footer {
 }
 
 .tarjeta-comentario .puntuacion {
-    font-size: 20px;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 
 /* Estilos específicos para la sección de contacto */
 
+#contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0;
+    background-color: rgba(233, 106, 76, 0.1) ;
+}
 form {
     width: 500px;
     max-width: 90%;
@@ -282,10 +355,15 @@ form {
     cursor: pointer;
 }
 
+.bottom-bar{
+    background-color: #5FBFC9;
+    height: 30px;
+}
+
 /* Estilos para la seccion footer */
 
 footer {
-    background-color: #333;
+    background-color: #21044c;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -317,7 +395,7 @@ footer {
 }
 
 .redes-sociales ul li img:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .disclaimer p {
