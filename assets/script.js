@@ -1,3 +1,24 @@
+//ScrolltoTop
+addEventListener('DOMContentLoaded', ()=> {
+    const btnIrArriba = document.getElementById('btn-ir-arriba');
+
+    const obtenerUbicacion = () => document.documentElement.scrollTop || document.body.scrollTop;
+    
+    const indicarScroll = () => {
+        if (obtenerUbicacion() > 50) {
+            btnIrArriba.classList.remove('oculto')
+        } else {
+            btnIrArriba.classList.add('oculto')
+        }
+    }
+
+    window.addEventListener('scroll', indicarScroll)
+})
+
+
+
+
+//Slider
 const slider = document.querySelector('.slider-container')
 const puntos = document.querySelectorAll('.punto')
 

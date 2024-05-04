@@ -316,7 +316,7 @@ main .punto.activo{
     width: 80vw;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 1rem 2rem;
 }
 
 /* Estilos para las tarjetas de comentarios */
@@ -325,7 +325,10 @@ main .punto.activo{
     display: flex;
     width: 400px;
     margin-bottom: 1.5rem;
-    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    padding: 1rem;
     background-color: #f9f9f9;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -335,7 +338,6 @@ main .punto.activo{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-right: 1rem;
 }
 
 .tarjeta-comentario .contenido {
@@ -346,7 +348,6 @@ main .punto.activo{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0.5rem;
 }
 
 .tarjeta-comentario h4 {
