@@ -61,6 +61,7 @@ footer {
     visibility: visible;
 }
 
+
 /* Estilos específicos para la barra de navegación */
 
 .nav-list li {
@@ -121,15 +122,6 @@ footer {
     background-color: var(--primaryColor);
 }
 
-main{
-    display: flex;
-    justify-content: center;
-}
-
-main img{
-    width: 600px;
-}
-
 /* Estilos específicos para la sección de inicio */
 
 .inicio-container {
@@ -177,6 +169,58 @@ main img{
 .inicio-link:hover {
     opacity: 0.8;
 }
+
+
+/* Estilos para main & slider */
+
+main{
+    width: 800px;
+    max-width: 90%;
+    padding: 2em;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+main .slider-container{
+    width: 400%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2em;
+
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+}
+
+main img{
+    width: calc(100%/4 - 2em);
+    height: 500px;
+}
+
+main .slider-puntos{
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.5em;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main .punto{
+    font-size: 3rem;
+    margin: 0.5em 0.5em 0;
+    cursor: pointer;
+    color: #5FBFC9;
+}
+
+main .punto.activo{
+    color: #FCCE20;
+}
+
 
 /* Estilos para la sección de productos */
 
@@ -255,7 +299,7 @@ main img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
     gap: 2rem;
     padding: 2rem 0 4rem 0;
