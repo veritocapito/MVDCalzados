@@ -37,3 +37,40 @@ puntos.forEach( (cadaPunto, i) => {
     })
 })
 
+
+
+//Validacion de formulario de contacto
+const form = document.getElementById('contactForm');
+
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const nombre = document.getElementById('nombre').value;
+    const email = document.getElementById('email').value;
+    const telefono = document.getElementById('telefono').value;
+    const consulta = document.getElementById('consulta').value;
+    const genero = document.getElementById('genero');
+    const talle = document.getElementById('talle').value;
+    const imagen = document.getElementById('imagen');
+
+    if (nombre.trim() === '' || email.trim() === '' || telefono.trim() === '' || consulta.trim() === '' || talle === '') {
+        alert('Por favor, completa todos los campos obligatorios del formulario.');
+        return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert('Por favor, ingresa un email válido.');
+        return;
+    }
+
+    enviarFormulario(nombre, email, telefono, consulta, genero, talle, imagen,);
+});
+
+function enviarFormulario(nombre, email, telefono, consulta, genero, talle, imagen) {
+
+    alert('Formulario enviado correctamente');
+    form.reset();
+}
+
+

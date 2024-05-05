@@ -175,7 +175,7 @@ footer {
 
 main{
     width: 800px;
-    max-width: 90%;
+    max-width: 100%;
     padding: 2em;
     overflow: hidden;
     margin: 0 auto;
@@ -370,13 +370,17 @@ main .punto.activo{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
     padding: 4rem 0;
     background-color: rgba(233, 106, 76, 0.1) ;
 }
-form {
+
+form, .subtitulo {
     width: 500px;
     max-width: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
 #contactForm label {
@@ -390,9 +394,45 @@ form {
     padding: 10px;
     margin-bottom: 15px;
     resize: none;
+    border: 0.8px rgba(0, 0, 0, 0.5);
+}
+
+
+
+#contactForm .genero{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contactForm .genero-item{
+    display: flex;
+}
+
+#contactForm input[type="radio"]{
+    width: 10%;
+}
+
+#contactForm .talle{
+    display: flex;
+    align-items: first baseline;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+#contactForm select{
+    padding: 0.4rem 0;
+}
+
+#contactForm .imagen{
+    display: flex;
+    align-items: first baseline;
+    padding: 0.5rem 0;
 }
 
 #contactForm button {
+    width: 40%;
+    align-self: center;
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
@@ -400,12 +440,17 @@ form {
     cursor: pointer;
 }
 
+#contactForm span {
+    color: #E96A4C;
+    font-weight: bold;
+}
+
+/* Estilos para la seccion footer */
+
 .bottom-bar{
     background-color: #5FBFC9;
     height: 30px;
 }
-
-/* Estilos para la seccion footer */
 
 footer {
     background-color: #21044c;
