@@ -1,15 +1,18 @@
 //ScrolltoTop
 addEventListener('DOMContentLoaded', ()=> {
     const btnIrArriba = document.getElementById('btn-ir-arriba');
+    const btnWhatsapp = document.getElementById('whatsapp');
 
     const obtenerUbicacion = () => document.documentElement.scrollTop || document.body.scrollTop;
     
     const indicarScroll = () => {
-        if (obtenerUbicacion() > 50) {
-            btnIrArriba.classList.remove('oculto')
-        } else {
-            btnIrArriba.classList.add('oculto')
-        }
+        obtenerUbicacion() > 50
+        ? btnIrArriba.classList.remove('oculto')
+        : btnIrArriba.classList.add('oculto')
+        
+        obtenerUbicacion() > 500
+        ? btnWhatsapp.classList.remove('oculto')
+        : btnWhatsapp.classList.add('oculto')
     }
 
     window.addEventListener('scroll', indicarScroll)
