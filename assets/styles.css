@@ -7,13 +7,10 @@
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Montserrat", sans-serif;
-}
-
-header {
-    background-color: #21044c;
 }
 
 h1{
@@ -22,10 +19,6 @@ h1{
     text-align: center;
     padding: 0.5rem 0;
     font-family: 'Mynerve', sans-serif;
-}
-
-main {
-    padding: 20px;
 }
 
 a {
@@ -43,8 +36,8 @@ footer {
     position: fixed;
     z-index: 1000;
     font-size: 20px;
-    right: 20px;
-    bottom: 20px;
+    right: 3%;
+    bottom: 5%;
     color: #5FBFC9;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -67,8 +60,8 @@ footer {
 
 #whatsapp{
     position: fixed;
-    right: 50px;
-    bottom: 60px;
+    right: 5%;
+    bottom: 10%;
 }
 
 #whatsapp:hover{
@@ -78,11 +71,55 @@ footer {
 
 /* Estilos específicos para la barra de navegación */
 
+header {
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #21044c;
+}
+
+.navbar {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.95;    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 150px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.nav-list {
+    position: absolute;
+    top: 89px;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    opacity: 0.95;
+    background-color: #21044c;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 .nav-list li {
-    display: inline-block;
-    padding: 0 20px;
-    list-style: none;
-    font-size: 18px;
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
 }
 
 .nav-item a {
@@ -97,51 +134,62 @@ footer {
     color: #5FBFC9;
 }
 
-.navbar {
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-}
-
-.nav-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-}
-
-.logo {
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-}
-
-.logo img {
-    width: 250px;
-}
-
-.hamburger {
+#menu-check {
     display: none;
-    cursor: pointer;
 }
 
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: var(--primaryColor);
+#menu-check:not(:checked) ~ ul {
+    display: none;
 }
+
+#menu-check:checked ~ ul {
+    display: flex;
+}
+
+#menu-check:checked ~ label #menu-abrir {
+    display: none;
+}
+
+#menu-check:checked ~ label #menu-cerrar {
+    display: block;
+    font-size: 1.8rem;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E96A4C;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: 2px solid #E96A4C;
+    border-radius: 5px;
+    position: absolute;
+    right: 16px;
+    top: 24px;
+    width: 45px;
+    height: 42px;
+    padding: 0.3rem 0.6rem;
+    z-index: 2;
+}
+
+#menu:hover {
+    color: #5FBFC9;
+    cursor: pointer;
+    border-color: #5FBFC9;
+}
+
+#menu-cerrar {
+    display: none;
+}
+
+
 
 /* Estilos específicos para la sección de inicio */
 
 .inicio-container {
     padding: 5px 10%;
-    min-height: 80vh;
+    min-height: calc(100vh - 70px);
     display: flex;
     row-gap: 2rem;
     align-items: center;
@@ -178,7 +226,6 @@ footer {
     color: #f9f9f9;
     padding: 0.8rem 2rem;
     align-self: flex-start;
-    border-radius: 10px;
     font-weight: bold;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.522);
 }
@@ -350,7 +397,6 @@ main .punto.activo{
 }
 
 .comentarios {
-    width: 80vw;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem 2rem;
@@ -358,8 +404,7 @@ main .punto.activo{
 
 .tarjeta-comentario {
     display: flex;
-    width: 400px;
-    margin-bottom: 1.5rem;
+    width: auto;
     align-items: center;
     justify-content: space-between;
     gap: 0.8rem;
@@ -569,8 +614,41 @@ footer {
 
 @media screen and (min-width: 768px) {
     /* Estilos para tablets */
+    #menu, #menu-check {
+        display: none;
+    }
+
+    .navbar{
+        display: flex;
+        padding-top: 0;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: static;
+        
+    }
+
+    #menu-check:not(:checked) ~ ul {
+        display: flex;
+        padding: 0;
+    }
+
+    #menu-check:checked ~ ul {
+        display: none;
+    }
+
+    .comentarios{
+        max-width: 80%;
+    }
+
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1600px) {
     /* Estilos para escritorio */
+    .comentarios{
+        max-width: 1240px;
+    }
 }

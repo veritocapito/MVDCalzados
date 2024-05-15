@@ -6,11 +6,11 @@ addEventListener('DOMContentLoaded', ()=> {
     const obtenerUbicacion = () => document.documentElement.scrollTop || document.body.scrollTop;
     
     const indicarScroll = () => {
-        obtenerUbicacion() > 50
+        obtenerUbicacion() > 250
         ? btnIrArriba.classList.remove('oculto')
         : btnIrArriba.classList.add('oculto')
         
-        obtenerUbicacion() > 500
+        obtenerUbicacion() > 600
         ? btnWhatsapp.classList.remove('oculto')
         : btnWhatsapp.classList.add('oculto')
     }

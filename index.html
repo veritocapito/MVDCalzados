@@ -21,49 +21,67 @@
 
     <body>
         <header id="home">
-            <nav class="navbar" id="nav">
-                <div class="logo">
-                    <img src="./assets/img/logoMVD.png" alt="logo">
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#productos">Productos</a></li>
-                    <li class="nav-item"><a href="#nosotros">Nosotros</a></li>
-                    <li class="nav-item"><a href="#redes">Redes</a></li>
-                    <li class="nav-item"><a href="#contacto">Contacto</a></li>
+            <!--<nav class="nav__container">
+                <a href="#home">
+                    <img src="./assets/img/logoVCDev.png" alt="logo" class="logo">
+                </a>
+                <label for="menu" class="menu">
+                    <img src="./assets/img/menu-hamburger.png" alt="menu">
+                </label>
+                <input type="checkbox" name="menu" id="menu">
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a href="#about" >About Me</a></li>
+                    <li class="nav__list-item"><a href="#projects" >Projects</a></li>
+                    <li class="nav__list-item"><a href="#education" >Education</a></li>
+                    <li class="nav__list-item"><a href="#contact" >Contact</a></li>
                 </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-            <a href="#home" class="oculto" id="btn-ir-arriba">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    class="icon icon-tabler icon-tabler-square-rounded-chevron-up-filled" width="40" height="40"
-                    viewBox="0 0 22 22" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path
-                        d="M12 2c-.218 0 -.432 .002 -.642 .005l-.616 .017l-.299 .013l-.579 .034l-.553 .046c-4.785 .464 -6.732 2.411 -7.196 7.196l-.046 .553l-.034 .579c-.005 .098 -.01 .198 -.013 .299l-.017 .616l-.004 .318l-.001 .324c0 .218 .002 .432 .005 .642l.017 .616l.013 .299l.034 .579l.046 .553c.464 4.785 2.411 6.732 7.196 7.196l.553 .046l.579 .034c.098 .005 .198 .01 .299 .013l.616 .017l.642 .005l.642 -.005l.616 -.017l.299 -.013l.579 -.034l.553 -.046c4.785 -.464 6.732 -2.411 7.196 -7.196l.046 -.553l.034 -.579c.005 -.098 .01 -.198 .013 -.299l.017 -.616l.005 -.642l-.005 -.642l-.017 -.616l-.013 -.299l-.034 -.579l-.046 -.553c-.464 -4.785 -2.411 -6.732 -7.196 -7.196l-.553 -.046l-.579 -.034a28.058 28.058 0 0 0 -.299 -.013l-.616 -.017l-.318 -.004l-.324 -.001zm-.707 7.293a1 1 0 0 1 1.32 -.083l.094 .083l3 3a1 1 0 0 1 -1.32 1.497l-.094 -.083l-2.293 -2.292l-2.293 2.292a1 1 0 0 1 -1.32 .083l-.094 -.083a1 1 0 0 1 -.083 -1.32l.083 -.094l3 -3z"
-                        fill="currentColor" stroke-width="0"></path>
-                </svg>
-            </a>
+            </nav> -->
 
-            <a href="https://wa.me/541134080440?text=Hola!%20Quiero%20hacer%20una%20consulta..." class="oculto"  id="whatsapp" target="_blank">
-                <picture>
-                    <source srcset="./assets/img/whatsapp.png" media="(min-width:60px)">
-                    <img src="/assets/img/whatsapp.png" alt="whatsapp">
-                </picture>
-            </a>
+            <nav class="navbar" id="nav">
+                <a href="#home" class="logo">
+                    <img src="./assets/img/logoMVD.png" alt="logo">
+                </a>
+                <label id="menu" for="menu-check">
+                    <span id="menu-abrir">&#9776</span>
+                    <span id="menu-cerrar">X</span>
+                </label>
+                <input type="checkbox" id="menu-check">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#productos">PRODUCTOS</a></li>
+                    <li class="nav-item"><a href="#nosotros">NOSOTROS</a></li>
+                    <li class="nav-item"><a href="#redes">REDES</a></li>
+                    <li class="nav-item"><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </nav>
         </header>
 
+        <a href="#home" class="oculto" id="btn-ir-arriba">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-square-rounded-chevron-up-filled" width="40" height="40"
+                viewBox="0 0 22 22" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                    d="M12 2c-.218 0 -.432 .002 -.642 .005l-.616 .017l-.299 .013l-.579 .034l-.553 .046c-4.785 .464 -6.732 2.411 -7.196 7.196l-.046 .553l-.034 .579c-.005 .098 -.01 .198 -.013 .299l-.017 .616l-.004 .318l-.001 .324c0 .218 .002 .432 .005 .642l.017 .616l.013 .299l.034 .579l.046 .553c.464 4.785 2.411 6.732 7.196 7.196l.553 .046l.579 .034c.098 .005 .198 .01 .299 .013l.616 .017l.642 .005l.642 -.005l.616 -.017l.299 -.013l.579 -.034l.553 -.046c4.785 -.464 6.732 -2.411 7.196 -7.196l.046 -.553l.034 -.579c.005 -.098 .01 -.198 .013 -.299l.017 -.616l.005 -.642l-.005 -.642l-.017 -.616l-.013 -.299l-.034 -.579l-.046 -.553c-.464 -4.785 -2.411 -6.732 -7.196 -7.196l-.553 -.046l-.579 -.034a28.058 28.058 0 0 0 -.299 -.013l-.616 -.017l-.318 -.004l-.324 -.001zm-.707 7.293a1 1 0 0 1 1.32 -.083l.094 .083l3 3a1 1 0 0 1 -1.32 1.497l-.094 -.083l-2.293 -2.292l-2.293 2.292a1 1 0 0 1 -1.32 .083l-.094 -.083a1 1 0 0 1 -.083 -1.32l.083 -.094l3 -3z"
+                    fill="currentColor" stroke-width="0"></path>
+            </svg>
+        </a>
+
+        <a href="https://wa.me/541134080440?text=Hola!%20Quiero%20hacer%20una%20consulta..." class="oculto"
+            id="whatsapp" target="_blank">
+            <picture>
+                <source srcset="./assets/img/whatsapp.png" media="(min-width:60px)">
+                <img src="/assets/img/whatsapp.png" alt="whatsapp">
+            </picture>
+        </a>
+
         <section id="inicio">
-            <h1>¡Bienvenidos a MVD Calzados!</h1>
+            <h1>¡Bienvenidos!</h1>
             <!-- Contenido de la sección de inicio -->
             <div class="inicio-container">
                 <div class="inicio-descripcion">
                     <h2 class="inicio-titulo">Temporada Otoño Invierno 2024</h2>
-                    <a class="inicio-link" href="#productos">Comprar</a>
+                    <a class="inicio-link" href="#productos">COMPRAR</a>
                 </div>
             </div>
         </section>
@@ -89,78 +107,100 @@
             <div class="zapatos-container">
                 <div class="zapato">
                     <img src="./assets/img/productos/bota-orense.jpg" alt="Zapato 1">
-                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-1171119623-zapato-nautico-azul-pu-bebe-nene-prem-_JM" target="_blank" >Zapato Nautico Azul Premium</a></h3>
-                    <p class="descripcion">El zapato náutico para bebé/niño, es perfecto para los pequeños aventureros.</p>
+                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-1171119623-zapato-nautico-azul-pu-bebe-nene-prem-_JM"
+                            target="_blank">Zapato Nautico Azul Premium</a></h3>
+                    <p class="descripcion">El zapato náutico para bebé/niño, es perfecto para los pequeños aventureros.
+                    </p>
                     <p class="precio">$24.000.-</p>
                 </div>
                 <div class="zapato">
                     <img src="./assets/img/productos/borcegos.jpg" alt="Zapato 2">
-                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-1431165164-botita-chavito-gamuza-beige-nenea-cordon-mvd-calzados-_JM" target="_blank">Borcego Alicante Niños Cordon</a></h3>
-                    <p class="descripcion">Es el calzado perfecto para los que buscan comodidad y estilo en un solo producto.</p>
+                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-1431165164-botita-chavito-gamuza-beige-nenea-cordon-mvd-calzados-_JM"
+                            target="_blank">Borcego Alicante Niños Cordon</a></h3>
+                    <p class="descripcion">Es el calzado perfecto para los que buscan comodidad y estilo en un solo
+                        producto.</p>
                     <p class="precio">$25.000.-</p>
                 </div>
                 <div class="zapato">
                     <img src="./assets/img/productos/chavito.jpg" alt="Zapato 3">
-                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-1431165164-botita-chavito-gamuza-beige-nenea-cordon-mvd-calzados-_JM" target="_blank">Botita Chavito Gamuza Cordon</a></h3>                    
-                    <p class="descripcion">Con un estilo de botinetas, estas botitas son ideales para cualquier ocasión.</p>
+                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-1431165164-botita-chavito-gamuza-beige-nenea-cordon-mvd-calzados-_JM"
+                            target="_blank">Botita Chavito Gamuza Cordon</a></h3>
+                    <p class="descripcion">Con un estilo de botinetas, estas botitas son ideales para cualquier ocasión.
+                    </p>
                     <p class="precio">$29.000.-</p>
                 </div>
                 <div class="zapato">
                     <img src="./assets/img/productos/botas.jpg" alt="Zapato 4">
-                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-1132833307-bota-borsego-nena-charol-22-al-34-con-cierre-_JM" target="_blank">Bota Borsego Girona</a></h3>
-                    <p class="descripcion">Con un estilo de botinetas, estas botitas son ideales para cualquier ocasión.</p>
+                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-1132833307-bota-borsego-nena-charol-22-al-34-con-cierre-_JM"
+                            target="_blank">Bota Borsego Girona</a></h3>
+                    <p class="descripcion">Con un estilo de botinetas, estas botitas son ideales para cualquier ocasión.
+                    </p>
                     <p class="precio">$26.000.-</p>
                 </div>
                 <div class="zapato">
                     <img src="./assets/img/productos/merida.jpg" alt="Zapato 5">
-                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-810824058-zapato-guillermina-bautismocomunionfiesta-nena-blanco-con-strass-_JM" target="_blank">Zapato Guillermina Merida</a></h3>
+                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-810824058-zapato-guillermina-bautismocomunionfiesta-nena-blanco-con-strass-_JM"
+                            target="_blank">Zapato Guillermina Merida</a></h3>
                     <p class="descripcion">Su diseño infantil lo hace versátil y adecuado para cualquier ocasión.</p>
                     <p class="precio">$24.000.-</p>
                 </div>
                 <div class="zapato">
                     <img src="./assets/img/productos/marsella-niza.jpg" alt="Zapato 6">
-                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-623369753-zapato-guillermina-bautismocomunionfiesta-nena-blanco-_JM" target="_blank">Zapato Guillermina Marsella</a></h3>
+                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-623369753-zapato-guillermina-bautismocomunionfiesta-nena-blanco-_JM"
+                            target="_blank">Zapato Guillermina Marsella</a></h3>
                     <p class="descripcion">El zapato ideal para que tu niña se sienta cómoda durante todo el evento.</p>
                     <p class="precio">$24.200.-</p>
                 </div>
                 <div class="zapato">
                     <img src="./assets/img/productos/princes.jpg" alt="Zapato 7">
-                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-1166105675-zapato-guillermina-bautismo-fiesta-nena-nude-y-ngo-charol-_JM" target="_blank">Zapato Guillermina Nude/Negro</a></h3>
-                    <p class="descripcion">De charol de alta calidad con moño cosido, garantiza durabilidad y estilo.</p>
+                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-1166105675-zapato-guillermina-bautismo-fiesta-nena-nude-y-ngo-charol-_JM"
+                            target="_blank">Zapato Guillermina Nude/Negro</a></h3>
+                    <p class="descripcion">De charol de alta calidad con moño cosido, garantiza durabilidad y estilo.
+                    </p>
                     <p class="precio">$23.200.-</p>
                 </div>
                 <div class="zapato">
                     <img src="./assets/img/productos/zapatilla-roma.jpg" alt="Zapato 8">
-                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-740536526-nautico-varon-suela-_JM" target="_blank">Zapatilla Clasica ROMA</a></h3>
-                    <p class="descripcion">Perfecto para los Niños que buscan comodidad y estilo en un solo producto.</p>
+                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-740536526-nautico-varon-suela-_JM"
+                            target="_blank">Zapatilla Clasica ROMA</a></h3>
+                    <p class="descripcion">Perfecto para los Niños que buscan comodidad y estilo en un solo producto.
+                    </p>
                     <p class="precio">$24.900.-</p>
                 </div>
                 <div class="zapato">
                     <img src="./assets/img/productos/zapatilla-bilbao.jpg" alt="Zapato 9">
-                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-740536526-nautico-varon-suela-_JM" target="_blank">Zapatilla Clasica BILBAO</a></h3>
-                    <p class="descripcion">Estilo clásico, atemporal y versátil, ideal para combinar con diferentes outfits.</p>
+                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-740536526-nautico-varon-suela-_JM"
+                            target="_blank">Zapatilla Clasica BILBAO</a></h3>
+                    <p class="descripcion">Estilo clásico, atemporal y versátil, ideal para combinar con diferentes
+                        outfits.</p>
                     <p class="precio">$25.900.-</p>
                 </div>
                 <div class="zapato">
                     <img src="./assets/img/productos/queen-charol.jpg" alt="Zapato 10">
-                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-623369753-zapato-guillermina-bautismocomunionfiesta-nena-blanco-_JM" target="_blank">Zapato Guillermina Charol</a></h3>
-                    <p class="descripcion">Con un diseño clásico y elegante, perfecto para cualquier ocasión especial.</p>
+                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-623369753-zapato-guillermina-bautismocomunionfiesta-nena-blanco-_JM"
+                            target="_blank">Zapato Guillermina Charol</a></h3>
+                    <p class="descripcion">Con un diseño clásico y elegante, perfecto para cualquier ocasión especial.
+                    </p>
                     <p class="precio">$23.200.-</p>
                 </div>
                 <div class="zapato">
                     <img src="./assets/img/productos/queen-lurex.jpg" alt="Zapato 11">
-                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-1132761103-zapato-guillermina-bautismocomunionfiesta-bb-nena-nude-cta-_JM" target="_blank">Zapato Guillermina Lurex</a></h3>
-                    <p class="descripcion">De tela brillosa de alta calidad y moño cosido. Elegancia y sofisticación.</p>
+                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-1132761103-zapato-guillermina-bautismocomunionfiesta-bb-nena-nude-cta-_JM"
+                            target="_blank">Zapato Guillermina Lurex</a></h3>
+                    <p class="descripcion">De tela brillosa de alta calidad y moño cosido. Elegancia y sofisticación.
+                    </p>
                     <p class="precio">$26.250.-</p>
                 </div>
                 <div class="zapato">
                     <img src="./assets/img/productos/queen-transfer.jpg" alt="Zapato 12">
-                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-623369753-zapato-guillermina-bautismocomunionfiesta-nena-blanco-_JM" target="_blank">Zapato Guillermina Transfer</a></h3>
+                    <h3><a href="https://articulo.mercadolibre.com.ar/MLA-623369753-zapato-guillermina-bautismocomunionfiesta-nena-blanco-_JM"
+                            target="_blank">Zapato Guillermina Transfer</a></h3>
                     <p class="descripcion">Con un diseño clásico y elegante, perfecto para cada ocasión especial.</p>
                     <p class="precio">$23.200.-</p>
                 </div>
             </div>
-            <a href="https://listado.mercadolibre.com.ar/mvd-calzados" target="_blank" class="linkMl">MOSTRAR MAS PRODUCTOS</a>
+            <a href="https://listado.mercadolibre.com.ar/mvd-calzados" target="_blank" class="linkMl">MOSTRAR MAS
+                PRODUCTOS</a>
         </section>
 
         <section id="nosotros">
@@ -168,7 +208,8 @@
             <div class="nosotros-container">
                 <div class="historia">
                     <h3>Nuestra Historia</h3>
-                    <p>Somos <strong>MVD Calzados</strong>, una empresa dedicada a la fabricación y venta de zapatos infantiles de alta
+                    <p>Somos <strong>MVD Calzados</strong>, una empresa dedicada a la fabricación y venta de zapatos
+                        infantiles de alta
                         calidad desde hace más de una década. Nuestra pasión por la moda y el confort nos ha llevado a
                         crear diseños únicos y duraderos que se adaptan a las necesidades de los más pequeños.</p>
                     <p>Desde nuestros humildes comienzos en un pequeño taller artesanal en Buenos Aires, hemos crecido
@@ -178,7 +219,7 @@
                 </div>
 
                 <h3 id="comentarios">Comentarios de Nuestros Clientes</h3>
-                <div class="comentarios" >
+                <div class="comentarios">
 
                     <div class="tarjeta-comentario">
                         <img src="https://i.pravatar.cc/150?img=5" alt="Foto de Perfil 1">
@@ -241,8 +282,13 @@
         <section id="redes">
             <h3>Seguinos en redes:</h3>
             <div class="iframes">
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmvd.calzados%2Fposts%2Fpfbid02pLEn2aHJdHReZxsGPrXin3N4KF8RQdviPCy5vDtZHMtt6HPcd1NCaNfG5fGKaUCvl&show_text=true&width=500&is_preview=true" width="320" height="476" style="border:none;overflow:hidden;background-color:#f9f9f9;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                <iframe width="320" height="478" src="https://www.instagram.com/p/C2nwZgtvD-l/embed" scrolling="no" frameborder="0"></iframe>
+                <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmvd.calzados%2Fposts%2Fpfbid02pLEn2aHJdHReZxsGPrXin3N4KF8RQdviPCy5vDtZHMtt6HPcd1NCaNfG5fGKaUCvl&show_text=true&width=500&is_preview=true"
+                    width="320" height="476" style="border:none;overflow:hidden;background-color:#f9f9f9;"
+                    scrolling="no" frameborder="0" allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <iframe width="320" height="478" src="https://www.instagram.com/p/C2nwZgtvD-l/embed" scrolling="no"
+                    frameborder="0"></iframe>
             </div>
 
         </section>
@@ -319,8 +365,7 @@
                                 src="./assets/img/facebook.png" alt="Facebook"></a></li>
                     <li><a href="https://www.instagram.com/mvdcalzados/" target="_blank"><img
                                 src="./assets/img/instagram.png" alt="Instagram"></a></li>
-                    <li><a href="mailto:info@mvdcalzados.com.ar"><img
-                                src="./assets/img/mail.png" alt="Email"></a></li>
+                    <li><a href="mailto:info@mvdcalzados.com.ar"><img src="./assets/img/mail.png" alt="Email"></a></li>
                 </ul>
             </div>
             <div class="disclaimer">
